@@ -39,6 +39,10 @@ They contain the executed command line along with any additional results from th
 
 The typical documented use case in [LOLBAS](https://lolbas-project.github.io/lolbas/Binaries/Winget/) of abusing Winget is via local manifest installs. We an use the same log file to look for executed command along with the domain and binary name
 
+> **Note**
+>
+> Fun note instead of the "install" flag you could also use "add" which doesn't appear in the help menu, but does in the [source](https://github.com/microsoft/winget-cli/blob/master/src/AppInstallerCLICore/Commands/InstallCommand.h#L10)
+
 ```log
 2023-04-15 17:21:37.328 [CORE] WinGet, version [1.4.10173], activity [{783EDBDD-F637-422B-96D8-F3A36B1898C6}]
 2023-04-15 17:21:37.328 [CORE] OS: Windows.Desktop v10.0.22621.963
