@@ -226,6 +226,41 @@ In order be able to install packages via local manifests the `LocalManifestFiles
   </Event>
 ```
 
+- The downloaded package gets MoTW applied to it and a Sysmon EID 15 is generated
+
+```xml
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}" /> 
+  <EventID>15</EventID> 
+  <Version>2</Version> 
+  <Level>4</Level> 
+  <Task>15</Task> 
+  <Opcode>0</Opcode> 
+  <Keywords>0x8000000000000000</Keywords> 
+  <TimeCreated SystemTime="2023-04-17T01:22:08.1380168Z" /> 
+  <EventRecordID>1359018022</EventRecordID> 
+  <Correlation /> 
+  <Execution ProcessID="5572" ThreadID="10444" /> 
+  <Channel>Microsoft-Windows-Sysmon/Operational</Channel> 
+  <Computer>XXXXX</Computer> 
+  <Security UserID="S-1-5-18" /> 
+  </System>
+- <EventData>
+  <Data Name="RuleName">-</Data> 
+  <Data Name="UtcTime">2023-04-17 01:22:08.137</Data> 
+  <Data Name="ProcessGuid">{9a08371b-f0bd-643d-bf8f-000000002200}</Data> 
+  <Data Name="ProcessId">22824</Data> 
+  <Data Name="Image">C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.19.10173.0_x64__8wekyb3d8bbwe\winget.exe</Data> 
+  <Data Name="TargetFilename">C:\Users\XXXX\AppData\Local\Temp\WinGet\OpsecInstaller.1.0.0\972efbb0e7990a0b8404bbf9c7a57b047db169628aba7a017fd815ee5202e4d3:Zone.Identifier</Data> 
+  <Data Name="CreationUtcTime">2023-04-17 01:22:07.823</Data> 
+  <Data Name="Hash">SHA1=67A68EF90A0D9BCD47D62B850D5F14FB6D20DEC7,MD5=801A171EC031615A3EA0FDF1FD152154,SHA256=01747815355E751A568FA10E1528F611ED5E5B2C331D70E22B88649E907EDCF0,IMPHASH=00000000000000000000000000000000</Data> 
+  <Data Name="Contents">[ZoneTransfer] ZoneId=3 HostUrl=http://10.20.2.100/notepad.exe</Data> 
+  <Data Name="User">XXXX</Data> 
+  </EventData>
+  </Event>
+```
+
 ### Installed Packages DB
 
 From a forensic perspective there is also the `installed.db` database which is a Sqlite database that seems to contains information about installed packages (Publisher, Ids, Name,...etc). I didn't look into it a lot could be useful.
