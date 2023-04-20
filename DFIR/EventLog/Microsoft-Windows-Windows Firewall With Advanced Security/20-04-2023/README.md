@@ -1,4 +1,4 @@
-# Microsoft-Windows-Windows Firewall With Advanced Security
+# Microsoft-Windows-Windows Firewall With Advanced Security - DFIR/Detection Updates
 
 Created: 20-04-2023
 
