@@ -15,51 +15,51 @@ New Event IDs were added to Windows11 starting from version 22H2 Build 22621.382
 
 ### New Event IDs Windows 11 Only
 
-- EID 2052: A rule has been deleted in the Windows Defender Firewall exception list.
-- EID 2053: A connection security rule was deleted from IPsec settings.
-- EID 2054: A main mode rule has been deleted in the IPsec settings.
-- EID 2055: A phase 1 crypto set was deleted from IPsec settings.
-- EID 2056: A phase 2 crypto set was deleted from IPsec settings.
-- EID 2057: All connection security rules have been deleted from the IPsec configuration on this computer.
-- EID 2058: All main mode rules have been deleted from the IPsec configuration on this computer.
-- EID 2059: All rules have been deleted from the Windows Defender Firewall configuration on this computer.
-- EID 2060: Windows Defender Firewall has been reset to its default configuration.
-- EID 2061: A connection security rule was added to IPsec settings.
-- EID 2062: A connection security rule was modified in IPsec settings.
-- EID 2063: A connection security rule was added to IPsec settings when Windows Defender Firewall started.
-- EID 2064: An authentication set has been added to IPsec settings.
-- EID 2065: An authentication set has been modified in IPsec settings.
-- EID 2066: An authentication set has been added to IPsec settings when Windows Defender Firewall started.
-- EID 2067: An authentication set has been deleted from IPsec settings.
-- EID 2068: A main mode rule has been added in the IPsec settings.
-- EID 2069: A main mode rule has been modified in the IPsec settings.
-- EID 2070: A main mode rule was added to the IPsec settings when Windows Defender Firewall started.
-- EID 2071: A rule has been added to the Windows Defender Firewall exception list.
-- EID 2072: A rule has been listed when the Windows Defender Firewall started.
-- EID 2073: A rule has been modified in the Windows Defender Firewall exception list.
-- EID 2074: All authentication sets have been deleted from the IPsec configuration on this computer.
-- EID 2075: All crypto sets have been deleted from the IPsec configuration on this computer.
-- EID 2076: A phase 1 crypto set was added to IPsec settings.
-- EID 2077: A phase 1 crypto set was modified in IPsec settings.
-- EID 2078: A phase 1 crypto set was added to IPsec settings when Windows Defender Firewall started.
-- EID 2079: A phase 2 crypto set was added to IPsec settings.
-- EID 2080: A phase 2 crypto set was modified in IPsec settings.
-- EID 2081: A phase 2 crypto set was added to IPsec settings when Windows Defender Firewall started.
-- EID 2082: A Windows Defender Firewall setting in the {Profiles} profile has changed.
-- EID 2083: A Windows Defender Firewall setting has changed.
-- EID 2084: Added a Duplicate Rule
-- EID 2085: Created Hyper-V Port.
-- EID 2086: Updated Hyper-V Port.
-- EID 2087: Deleted Hyper-V Port.
-- EID 2088: A Hyper-V Firewall VM Setting has changed.
-- EID 2089: A Hyper-V Firewall VM Setting has reset.
-- EID 2090: A Hyper-V rule has been added.
-- EID 2091: A Hyper-V rule has been updated.
-- EID 2092: A Hyper-V rule has been deleted.
-- EID 2093: A error occured while initializing a Hyper-V port.
-- EID 2094: A error occured while processing a Hyper-V rule.
-- EID 2095: A Hyper-V VM Creator has been registered with the firewall service.
-- EID 2096: A Hyper-V VM Creator has been unregistered with the firewall service.
+- `EID 2052`: A rule has been deleted in the Windows Defender Firewall exception list.
+- `EID 2053`: A connection security rule was deleted from IPsec settings.
+- `EID 2054`: A main mode rule has been deleted in the IPsec settings.
+- `EID 2055`: A phase 1 crypto set was deleted from IPsec settings.
+- `EID 2056`: A phase 2 crypto set was deleted from IPsec settings.
+- `EID 2057`: All connection security rules have been deleted from the IPsec configuration on this computer.
+- `EID 2058`: All main mode rules have been deleted from the IPsec configuration on this computer.
+- `EID 2059`: All rules have been deleted from the Windows Defender Firewall configuration on this computer.
+- `EID 2060`: Windows Defender Firewall has been reset to its default configuration.
+- `EID 2061`: A connection security rule was added to IPsec settings.
+- `EID 2062`: A connection security rule was modified in IPsec settings.
+- `EID 2063`: A connection security rule was added to IPsec settings when Windows Defender Firewall started.
+- `EID 2064`: An authentication set has been added to IPsec settings.
+- `EID 2065`: An authentication set has been modified in IPsec settings.
+- `EID 2066`: An authentication set has been added to IPsec settings when Windows Defender Firewall started.
+- `EID 2067`: An authentication set has been deleted from IPsec settings.
+- `EID 2068`: A main mode rule has been added in the IPsec settings.
+- `EID 2069`: A main mode rule has been modified in the IPsec settings.
+- `EID 2070`: A main mode rule was added to the IPsec settings when Windows Defender Firewall started.
+- `EID 2071`: A rule has been added to the Windows Defender Firewall exception list.
+- `EID 2072`: A rule has been listed when the Windows Defender Firewall started.
+- `EID 2073`: A rule has been modified in the Windows Defender Firewall exception list.
+- `EID 2074`: All authentication sets have been deleted from the IPsec configuration on this computer.
+- `EID 2075`: All crypto sets have been deleted from the IPsec configuration on this computer.
+- `EID 2076`: A phase 1 crypto set was added to IPsec settings.
+- `EID 2077`: A phase 1 crypto set was modified in IPsec settings.
+- `EID 2078`: A phase 1 crypto set was added to IPsec settings when Windows Defender Firewall started.
+- `EID 2079`: A phase 2 crypto set was added to IPsec settings.
+- `EID 2080`: A phase 2 crypto set was modified in IPsec settings.
+- `EID 2081`: A phase 2 crypto set was added to IPsec settings when Windows Defender Firewall started.
+- `EID 2082`: A Windows Defender Firewall setting in the {Profiles} profile has changed.
+- `EID 2083`: A Windows Defender Firewall setting has changed.
+- `EID 2084`: Added a Duplicate Rule
+- `EID 2085`: Created Hyper-V Port.
+- `EID 2086`: Updated Hyper-V Port.
+- `EID 2087`: Deleted Hyper-V Port.
+- `EID 2088`: A Hyper-V Firewall VM Setting has changed.
+- `EID 2089`: A Hyper-V Firewall VM Setting has reset.
+- `EID 2090`: A Hyper-V rule has been added.
+- `EID 2091`: A Hyper-V rule has been updated.
+- `EID 2092`: A Hyper-V rule has been deleted.
+- `EID 2093`: A error occured while initializing a Hyper-V port.
+- `EID 2094`: A error occured while processing a Hyper-V rule.
+- `EID 2095`: A Hyper-V VM Creator has been registered with the firewall service.
+- `EID 2096`: A Hyper-V VM Creator has been unregistered with the firewall service.
 
 ## Interesting Changes
 
