@@ -79,7 +79,87 @@ In this case though and at least what to the extent of what I tested. It seems l
 
 This is important because if you're doing DFIR or building detection around this Provider/EventLog you might think there were no events (as I did at first)
 
+```xml
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="Microsoft-Windows-Windows Firewall With Advanced Security" Guid="{d1bc9aff-2abf-4d71-9146-ecb2a986eb85}" /> 
+  <EventID>2052</EventID> 
+  <Version>0</Version> 
+  <Level>4</Level> 
+  <Task>0</Task> 
+  <Opcode>0</Opcode> 
+  <Keywords>0x8000020000000000</Keywords> 
+  <TimeCreated SystemTime="2023-04-17T23:52:38.7709205Z" /> 
+  <EventRecordID>53804</EventRecordID> 
+  <Correlation /> 
+  <Execution ProcessID="4080" ThreadID="21304" /> 
+  <Channel>Microsoft-Windows-Windows Firewall With Advanced Security/Firewall</Channel> 
+  <Computer>XXXX</Computer> 
+  <Security UserID="S-1-5-19" /> 
+  </System>
+- <EventData>
+  <Data Name="RuleId">{4E14EE69-D455-42A6-9130-B06697D46C3C}</Data> 
+  <Data Name="RuleName">Chrome Sandbox</Data> 
+  <Data Name="ModifyingUser">XXXX</Data> 
+  <Data Name="ModifyingApplication">C:\WINDOWS\System32\svchost.exe</Data> 
+  <Data Name="ErrorCode">0</Data> 
+  </EventData>
+  </Event>
+```
+
+```xml
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="Microsoft-Windows-Windows Firewall With Advanced Security" Guid="{d1bc9aff-2abf-4d71-9146-ecb2a986eb85}" /> 
+  <EventID>2071</EventID> 
+  <Version>0</Version> 
+  <Level>4</Level> 
+  <Task>0</Task> 
+  <Opcode>0</Opcode> 
+  <Keywords>0x8000020000000000</Keywords> 
+  <TimeCreated SystemTime="2023-04-18T21:52:38.7735987Z" /> 
+  <EventRecordID>53806</EventRecordID> 
+  <Correlation /> 
+  <Execution ProcessID="4080" ThreadID="21304" /> 
+  <Channel>Microsoft-Windows-Windows Firewall With Advanced Security/Firewall</Channel> 
+  <Computer>XXXXX</Computer> 
+  <Security UserID="S-1-5-19" /> 
+  </System>
+- <EventData>
+  <Data Name="RuleId">{B14BAFDE-5BDC-4657-924F-037D92FC8017}</Data> 
+  <Data Name="RuleName">Chrome Sandbox</Data> 
+  <Data Name="Origin">1</Data> 
+  <Data Name="ApplicationPath" /> 
+  <Data Name="ServiceName" /> 
+  <Data Name="Direction">2</Data> 
+  <Data Name="Protocol">256</Data> 
+  <Data Name="LocalPorts" /> 
+  <Data Name="RemotePorts" /> 
+  <Data Name="Action">2</Data> 
+  <Data Name="Profiles">XXXXXX</Data> 
+  <Data Name="LocalAddresses">*</Data> 
+  <Data Name="RemoteAddresses">*</Data> 
+  <Data Name="RemoteMachineAuthorizationList" /> 
+  <Data Name="RemoteUserAuthorizationList" /> 
+  <Data Name="EmbeddedContext">Chrome Sandbox</Data> 
+  <Data Name="Flags">1</Data> 
+  <Data Name="Active">1</Data> 
+  <Data Name="EdgeTraversal">0</Data> 
+  <Data Name="LooseSourceMapped">0</Data> 
+  <Data Name="SecurityOptions">0</Data> 
+  <Data Name="ModifyingUser">XXXXX</Data> 
+  <Data Name="ModifyingApplication">C:\WINDOWS\System32\svchost.exe</Data> 
+  <Data Name="SchemaVersion">544</Data> 
+  <Data Name="RuleStatus">65536</Data> 
+  <Data Name="LocalOnlyMapped">0</Data> 
+  <Data Name="ErrorCode">0</Data> 
+  </EventData>
+  </Event>
+```
+
 ## References
+
+This research was made possible thanks to the [EVTX-ETW-Resources](https://github.com/nasbench/EVTX-ETW-Resources) project.
 
 If you want the full list of events pleas check this [CSV](https://github.com/nasbench/EVTX-ETW-Resources/blob/main/ETWEventsList/CSV/Windows11/22H2/W11_22H2_Pro_20220920_22621.382/Providers/Microsoft-Windows-Windows%20Firewall%20With%20Advanced%20Security.csv) provided via the [EVTX-ETW-Resources](https://github.com/nasbench/EVTX-ETW-Resources) project.
 
