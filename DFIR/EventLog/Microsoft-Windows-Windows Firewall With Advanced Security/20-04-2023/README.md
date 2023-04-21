@@ -6,8 +6,8 @@ This document describes new updates added to the `Microsoft-Windows-Windows Fire
 
 ## Metadata
 
-**GUID**: {d1bc9aff-2abf-4d71-9146-ecb2a986eb85}
-**Provider**: Microsoft-Windows-Windows Firewall With Advanced Security
+- **GUID**: {d1bc9aff-2abf-4d71-9146-ecb2a986eb85}
+- **Provider**: Microsoft-Windows-Windows Firewall With Advanced Security
 
 ## Summary
 
@@ -47,7 +47,6 @@ New Event IDs were added to Windows11 starting from version 22H2 Build 22621.382
 - `EID 2081`: A phase 2 crypto set was added to IPsec settings when Windows Defender Firewall started.
 - `EID 2082`: A Windows Defender Firewall setting in the {Profiles} profile has changed.
 - `EID 2083`: A Windows Defender Firewall setting has changed.
-- `EID 2084`: Added a Duplicate Rule
 - `EID 2085`: Created Hyper-V Port.
 - `EID 2086`: Updated Hyper-V Port.
 - `EID 2087`: Deleted Hyper-V Port.
@@ -162,6 +161,8 @@ This is important because if you're doing DFIR or building detection around this
 This research was made possible thanks to the [EVTX-ETW-Resources](https://github.com/nasbench/EVTX-ETW-Resources) project.
 
 If you want the full list of events pleas check this [CSV](https://github.com/nasbench/EVTX-ETW-Resources/blob/main/ETWEventsList/CSV/Windows11/22H2/W11_22H2_Pro_20220920_22621.382/Providers/Microsoft-Windows-Windows%20Firewall%20With%20Advanced%20Security.csv) provided via the [EVTX-ETW-Resources](https://github.com/nasbench/EVTX-ETW-Resources) project.
+
+Many thanks to [Andrew Rathbun](https://twitter.com/bunsofwrath12) for double checking the results.
 
 > **Note**
 >
