@@ -1,3 +1,3 @@
-# Misc-Tools-And-Scripts
+# Misc-Research
 
-TBD
+A collection of tools, scripts and personal research
