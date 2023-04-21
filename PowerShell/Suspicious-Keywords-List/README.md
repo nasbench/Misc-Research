@@ -4,9 +4,9 @@ PowerShell has a list of suspicious keywords. If found in a script block an auto
 
 Look for EID 4104 with Level 3 (Warning)
 
-**Source Code**: https://github.com/PowerShell/PowerShell/blob/master/src/System.Management.Automation/engine/runtime/CompiledScriptBlock.cs
-**DLL**: System.Management.Automation.dll
-**Reference**: https://twitter.com/nas_bench/status/1646252357020205060
+- **Source Code**: https://github.com/PowerShell/PowerShell/blob/master/src/System.Management.Automation/engine/runtime/CompiledScriptBlock.cs
+- **DLL**: System.Management.Automation.dll
+- **Reference**: https://twitter.com/nas_bench/status/1646252357020205060
 
 ```yml
 - Add-Type
