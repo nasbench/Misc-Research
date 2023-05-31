@@ -64,3 +64,9 @@ Options:
     -c,            Continue previous downloading
     -b,            Run downloaded in background
 ```
+
+For reference, a legitimate CLI would look something like this:
+
+```powershell
+"C:\ProgramData\Trend Micro Installer\TrendMicro_XX.X_HE_Full_XXXXXX\Vizor32\TisEzIns.exe" /v XXXX /b /e XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX /u "https://files.trendmicro.com/products/XXXXXXX/XX.X_XXXX/Global/XXXXXXXX/TrendMicro_XX.X_XXXX_HE_64bit.exe" /c /m XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX /p TREND_VIZOR_GLOBAL_EVENT_CONNECTION_ESTABLISHED /w TREND_VIZOR_GLOBAL_EVENT_SIA_DOWNLOAD_NOW /a XXXXXXXXXXX /f "C:\WINDOWS\temp\trend download\TrendMicro_Download.exe"
+```
