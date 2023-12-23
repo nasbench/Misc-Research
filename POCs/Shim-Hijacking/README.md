@@ -16,7 +16,7 @@ An abusable entry is an entry that meets the following conditions:
 
 Microsoft provide a lot of built-in shims that have "great" (potentially abusable) functionalities. The idea is to build a wrapper framework around this using the AppCompat DB [API](https://learn.microsoft.com/en-us/windows/win32/devnotes/sdbcreatedatabase). This would allows us to create a DB and its entries in a stealthy way avoiding any calls to ``sdbinst.exe`` for example.
 
-We could also expan this same idea to KernelShims by allowing the user to add driver entries they want to shim. Abusing the fact described in Alex Ionescu's [talk](https://www.youtube.com/watch?v=qCa9icMqBNM&ab_channel=ReactOSCommunity). Which is that the shims `atofail` and `kmatofail` do not exists on the system and can be hijacked.
+We could also expand this same idea to KernelShims by allowing the user to add driver entries they want to shim. Abusing the fact described in Alex Ionescu's [talk](https://www.youtube.com/watch?v=qCa9icMqBNM&ab_channel=ReactOSCommunity). Which is that the shims `atofail` and `kmatofail` do not exists on the system and can be hijacked.
 
 The idea is to abuse the fact that we can add entries to the `\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Compatibility\Driver` registry key and apply shims that might disrupt the flow of some drivers.
 
