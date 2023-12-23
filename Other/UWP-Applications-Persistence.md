@@ -40,7 +40,7 @@ While this answer our question how are these applications are able to start at t
 
 ### Windows Startup Extension
 
-Scrolling a bit on MSDN we find the following [docuemntation](https://learn.microsoft.com/en-us/uwp/api/windows.applicationmodel.startuptask?view=winrt-22621) about a class called `StartupTask`. Which describe exactly the behaviour that we were just investigating.
+Scrolling a bit on MSDN we find the following [documentation](https://learn.microsoft.com/en-us/uwp/api/windows.applicationmodel.startuptask?view=winrt-22621) about a class called `StartupTask`. Which describe exactly the behaviour that we were just investigating.
 
 ![image](https://github.com/nasbench/Misc-Research/assets/8741929/4704848d-0c7e-4707-b286-4bfe293d8d7d)
 
