@@ -1,6 +1,6 @@
 # Arbitrary Command Execution Via Windows Kit's StandaloneRunner
 
-StandaloneRunner.exe is a utility included with the Windows Driver Kit (WDK) used for testing and debugging drivers on Windows systems. It allows developers to execute and debug driver packages in a standalone environment without needing to install them on a target system.
+`StandaloneRunner.exe` is a utility included with the Windows Driver Kit (WDK) used for testing and debugging drivers on Windows systems. It allows developers to execute and debug driver packages in a standalone environment without needing to install them on a target system.
 
 Paths:
 
@@ -262,11 +262,13 @@ calc
 
 That's it!
 
-Once you execute `standalonerunner.exe` and wait for 60 seconds you should see a calculator pop up.
+Once you execute `standalonerunner.exe` and wait 60 seconds you should see a calculator pop up.
 
 ![image](https://github.com/nasbench/Misc-Research/assets/8741929/52287524-41d2-41dc-8188-193fc45bc74c)
 
 > **Note**
 >
 > A small ceveat if you want to test this. The COM `{0D972387-817B-46E7-913F-E9993FF401EB}` class needs to be registered on the system in order for this binary to work.
-> You can do so by calling regsvr32 as follows. `regsvr32 "C:\Program Files (x86)\Windows Kits\10\Testing\Runtimes\WDTF\RunTime\WDTF.DLL"`
+> You can do so by calling regsvr32 as follows.
+> `regsvr32 "C:\Program Files (x86)\Windows Kits\10\Testing\Runtimes\WDTF\RunTime\WDTF.DLL"`
+> This will not be an issue in machines using the utility already.
