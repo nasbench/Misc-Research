@@ -1,6 +1,8 @@
-# Blog: https://nasbench.medium.com/persistence-with-fiddler-classic-extensions-80e4600e874d
+# Fiddler Classic - Extension Persistence - Proof of Concept
 
-A simple fiddler classic extension persistence POC
+Read more: https://nasbench.medium.com/persistence-with-fiddler-classic-extensions-80e4600e874d
+
+### Example
 
 ```c#
 using System.Diagnostics;
