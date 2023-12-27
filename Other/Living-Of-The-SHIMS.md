@@ -83,7 +83,7 @@ Below is a list of all the binaries that can "theoretically" be hijacked and cur
 Didn't actually dig deep into the meaning behind this shim, but the name sounds super interesting and there are entries thata could easily be hijacked. 
 
 <details>
-    <summary>Expand</summary>
+    <summary>Expand Full List</summary>
 
 ```yml
 EXE: AcroRd32.exe
