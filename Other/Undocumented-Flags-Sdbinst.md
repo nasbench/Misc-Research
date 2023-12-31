@@ -1,5 +1,7 @@
 # Undocumented CLI Flags - Sdbinst.EXE
 
+The Application Compatibility Database Installer (sdbinst.exe) possess some undocumented flags that are often used by Windows itself.
+
 ### Registry Cleaning - `-f`
 
 The `-f` flag will clean/delete the following registry keys and their values related to AppCompat
