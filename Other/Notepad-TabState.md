@@ -1,5 +1,7 @@
 # Notepad History / TabState Location
 
+In recent versions of Windows 11, notepad added the ability to create tabs and save the history when closed. In order to achieve this it uses a concept called TabState stored inside of `.bin` files inside of the notepad package folder.
+
 ## Location
 
 ```
