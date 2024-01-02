@@ -40,6 +40,11 @@ This enables a specific registry value called `RestartApps` located in `HKEY_CUR
 
 Enbaling this should restart both our `notepad.exe` and `mspain.exe` processes.
 
+> **Note**
+>
+> In previous versions of Windows this feature was bundled with the option `Use my sign-in info to automatically finish setting my device after an update or restart` and controlled by a different registry keys and the group policy `Sign-in and lock last interactive user automatically`
+> Give the following a read for more information [1](https://www.tenforums.com/tutorials/49963-use-sign-info-auto-finish-after-update-restart-windows-10-a.html) [2](https://www.tenforums.com/tutorials/138685-turn-off-automatically-restart-apps-after-sign-windows-10-a.html)
+
 ### RegisterAppRestart Example
 
 Just to get the idea across even more. Here is a very simple example that registers itself and wait for input (to not kill the app). Executing this binary and restarting the machine should restart it with the commandline `SUPER_SECRET_WHOAMI_APT`.
@@ -182,7 +187,9 @@ While the name is a clear indication of what this SHIM actually do. We're actual
 This shim calls RegisterApplicationRestart so the app can restart after a user signs out and back in. The shim reference's COMMAND_LINE attribute can specify the command line arguments to use when registered. If the token "|COPY_COMMAND_LINE|" is used the app will be registered with the same command line that started the process. If missing then an empty command line is used.
 ```
 
-From the description we gather that by applying this SHIM to our application, the System will actually register the app for restart without us adding any code :)
+From the description we gather that by applying this SHIM to our application, the System will actually register the app for restart without us adding any code :) (We can even double check using APIMonitor)
+
+![image](https://github.com/nasbench/Misc-Research/assets/8741929/281aa868-91c4-4027-abf5-5833d7b3c7ce)
 
 Putting this into practice, we can pick any application that doesn't use the `RegisterApplicationRestart` API and apply this SHIM to it and we'll see it restart similar to the `notepad` and `mspaint` example.
 
@@ -212,3 +219,38 @@ EXE: notepad++.exe
 ```
 
 If we create a binary and modified the PE metadata to align with the conditions described above in the `MATCHING_FILE` section. We would achieve the same effect as someone enabling the compatibility tab feature but without touching the registry for added "stealth".
+
+![image](https://github.com/nasbench/Misc-Research/assets/8741929/09fb247a-082d-4b26-890b-0732b04c5320)
+
+We can check that it worked by looking for EID 505 in the `Microsoft-Windows-Application-Experience/Program-Telemetry` EventLog
+
+```xml
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="Microsoft-Windows-Application-Experience" Guid="{eef54e71-0661-422d-9a98-82fd4940b820}" /> 
+  <EventID>505</EventID> 
+  <Version>0</Version> 
+  <Level>4</Level> 
+  <Task>0</Task> 
+  <Opcode>0</Opcode> 
+  <Keywords>0x800000000000000</Keywords> 
+  <TimeCreated SystemTime="2023-12-11T01:24:46.7984411Z" /> 
+  <EventRecordID>75908</EventRecordID> 
+  <Correlation /> 
+  <Execution ProcessID="27268" ThreadID="27296" /> 
+  <Channel>Microsoft-Windows-Application-Experience/Program-Telemetry</Channel> 
+  <Computer>APTNAS</Computer> 
+  <Security UserID="S-1-5-21-333333333-5654654564654-025858969-1001" /> 
+  </System>
+- <UserData>
+- <CompatibilityFixEvent xmlns="http://www.microsoft.com/Windows/Diagnosis/PCA/events">
+  <ProcessId>27268</ProcessId> 
+  <StartTime>2023-12-11T01:24:45.7876222Z</StartTime> 
+  <FixID>{b38c7ca0-382f-4e68-84b2-20bc6f9bd0d1}</FixID> 
+  <Flags>0x80010101</Flags> 
+  <ExePath>C:\Users\xxxx\xxxxx\Release\notepad++.exe</ExePath> 
+  <FixName>Notepad++</FixName> 
+  </CompatibilityFixEvent>
+  </UserData>
+  </Event>
+```
