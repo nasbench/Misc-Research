@@ -46,7 +46,7 @@ MATCHING_FILE: *
     UPTO_LINK_DATE: 1232041020
 ```
 
-As you can see, these condition might not be super strict which could allow an attacker to create binaries that "mimick" these conditions in order to have the same shim applied.
+As you can see, these condition might not be super strict which could allow an attacker to create binaries that "mimic" these conditions in order to have the same shim applied.
 
 This is not a particularly new technique, as [Adam](https://twitter.com/Hexacorn) [blogged](https://www.hexacorn.com/blog/2020/03/18/shimbad-the-sailor/) about this in 2020 :)
 
@@ -1526,6 +1526,8 @@ EXE: rnsetup*.exe
 </details>
 
 ### SHIM: RegisterAppRestart
+
+We can abuse one of the binary to achieve persistence on the system using the `Restart Apps` functionality. Check out the writeup [Persistence Via RegisterAppRestart Shim](./Persistence-Via-RegisterAppRestart-Shim.md) for more information
 
 <details>
     <summary>Expand Full List</summary>
