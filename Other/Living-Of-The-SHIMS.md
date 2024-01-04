@@ -1480,7 +1480,19 @@ EXE: WksCal.exe
 
 ### SHIM: ReturnAdminGroupSidTrue
 
-This one also made the list just because of the interesting name. If you have time to play with please let me know
+> **Note**
+>
+> This SHIM might be useful in some cases. Currently there are no known method of potential abuse. Feel free to suggest if you have any ideas.
+
+This SHIM hooks the [RtlEqualSid](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlequalsid) from `Ntdll.dll` and compare the SID you provide to the `RtlEqualSid` and checks if it's part of the administrator group.
+
+It does this by creating an SID for the admin group using the [CreateWellKnownSid](https://learn.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-createwellknownsid) function and the the WELL_KNOWN_SID_TYPE value `WinBuiltinAdministratorsSid`
+
+```c++
+if ( !CreateWellKnownSid(WinBuiltinAdministratorsSid, 0i64, &unk_180066BA0, &cbSid) )
+```
+
+And then compares the provided SID with the one generated, if they match then it returns True, hence the name of the SHIM `ReturnAdminGroupSidTrue`
 
 <details>
     <summary>Expand Full List</summary>
