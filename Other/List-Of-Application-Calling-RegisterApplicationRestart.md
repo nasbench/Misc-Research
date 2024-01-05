@@ -58,7 +58,7 @@ The following is a list of built-in and third party applications that call the `
 |wordpad.exe | |
 |WpcMon.exe | |
 |C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_18.2306.1061.0_x64__8wekyb3d8bbwe\WebViewHost.exe | `--restore` |
-|C:\Program Files\WindowsApps\Microsoft.Paint_11.2311.28.0_x64__8wekyb3d8bbwe\PaintApp\mspaint.exe | |
+|C:\Program Files\WindowsApps\Microsoft.Paint_11.2311.28.0_x64__8wekyb3d8bbwe\PaintApp\mspaint.exe | `/restart *` where `*` is a GUID |
 |C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2311.33.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe | |
 |C:\Program Files\WindowsApps\MicrosoftCorporationII.QuickAssist_2.0.22.0_x64__8wekyb3d8bbwe\Microsoft.RemoteAssistance. | |QuickAssist\QuickAssist.exe
 |C:\Program Files\WindowsApps\MicrosoftTeams_23335.205.2559.726_x64__8wekyb3d8bbwe\msteams.exe | |
