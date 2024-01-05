@@ -50,10 +50,10 @@ The following flags are defined but no documented in both [DISM Command-Line Opt
 
 | Flag | Description |
 |------|-------------|
-| `/external` - Unknown |
-| `/provider` - Unknown |
-| `/sandbox`  - Enables Sandbox Mode |
-| `/showtags` - Unknown |
+| `/external` | Unknown |
+| `/provider` | Unknown |
+| `/sandbox`  | Enables Sandbox Mode |
+| `/showtags` | Unknown |
 
 #### PowerShell Cmdlets
 
