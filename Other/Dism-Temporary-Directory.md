@@ -9,7 +9,7 @@ This occurs if DISM selects to run in a Sandbox.
 
 > **Note**
 >
-> I still don't know what's the condition to trigger this sandbox mode is. Feel free to add the information if you have it
+> We know that sandbox mode is enabled for `offline` use. I still don't know what's the condition to trigger it for `online` mode. Feel free to add the information if you have it
 > For further investigation inspect the functions `CreateImageSessionFromLocation` and `CreateImageSession` which are the ones responsible for creating the temporary directory and selecting the sandbox mode usage.
 > They are defined in `dismcore.dll`
 
