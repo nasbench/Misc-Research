@@ -238,9 +238,9 @@ The second part of the string is the `sourceAssembly` full name. In our case the
 
 Computing everything will get us 2 values.
 
-```
-asmz://6c9254b82dc34bf3bcc88fa65afa41d3/458240/uz
-asmz://a50c1ff4b910ef881a27615526b5e50a/401408/uz
+```bash
+asmz://6c9254b82dc34bf3bcc88fa65afa41d3/458240/uz # x64
+asmz://a50c1ff4b910ef881a27615526b5e50a/401408/uz # x86
 ```
 
 Which answers the questions of how those temp files got their name. Which means if the Assembly name changes we would get different hashes.
