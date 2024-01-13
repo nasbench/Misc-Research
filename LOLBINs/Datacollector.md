@@ -203,7 +203,7 @@ We can proxy execution through the datacollector binary via the following method
 
 ### Appendix
 
-In case you want to copy the `datacollector` binary outside of its original location. The following DLLs are required for its execution and must part of the PATH.
+In case you want to copy the `datacollector` binary outside of its original location. The following DLLs are required for its execution and must be part of the PATH.
 
 - `Microsoft.TestPlatform.CommunicationUtilities.dll`
 - `Microsoft.TestPlatform.CoreUtilities.dll`
