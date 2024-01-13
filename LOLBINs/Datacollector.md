@@ -1,4 +1,4 @@
-# Datacollector
+# Datacollector.EXE
 
 Datacollector is a utility that's of the Microsoft Visual Studio test platform that allows for tracing and collecting about a binary.
 
