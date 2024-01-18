@@ -4,7 +4,14 @@ The following tries to document the meaning behind some of the obscure events
 
 ### EventID 15 (Registry Reorganization)
 
-TBD
+Message: `Hive [HiveName] was reorganized with a starting size of [OriginalSize] bytes and an ending size of [NewSize] bytes.`
+Fields:
+    - HiveNameLength
+    - HiveName
+    - OriginalSize
+    - NewSize
+
+This event is emitted from the kernel function `CmpLogReorganizeEvent`.
 
 ### EventID 16 (Access Bits Cleared)
 
@@ -21,7 +28,7 @@ The TL;DR is that the key node of a registry hive cell contain a field called `A
 
 You can use utilities such as [Registry Explorer](https://ericzimmerman.github.io/#!index.md) or [yarp](https://github.com/msuhanov/yarp) to view these values.
 
-The clearing of the bits entails a reorganization of the registry as well. By default the kernel uses a value of 7 days to perform this. We can see from the following example using `yarp`.
+The clearing of the bits entails a change in the reorganization timestamp of the registry as well. By default the kernel uses a value of 7 days to check for this. We can see from the following example using `yarp`.
 
 ```
 Hive information:
@@ -114,3 +121,11 @@ The following resources were a of great help in order to understand these events
 - https://twitter.com/errno_fail/status/972914221779439618
 - https://github.com/msuhanov/regf/blob/master/Windows%20registry%20file%20format%20specification.md#key-node
 - Windows Internals Seventh Edition Part 2
+
+We can modify the default value of 7 days or disable the Registry Reorganization completely by updating the following registry value of type DWORD.
+
+```
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Configuration Manager\RegistryReorganizationLimitDays
+```
+
+Setting this value to `0xffffffff` will "disable" it.
