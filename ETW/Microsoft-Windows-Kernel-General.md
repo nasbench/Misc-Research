@@ -28,7 +28,9 @@ The TL;DR is that the key node of a registry hive cell contain a field called `A
 
 You can use utilities such as [Registry Explorer](https://ericzimmerman.github.io/#!index.md) or [yarp](https://github.com/msuhanov/yarp) to view these values.
 
-The clearing of the bits entails a change in the reorganization timestamp of the registry as well. By default the kernel uses a value of 7 days to check for this. We can see from the following example using `yarp`.
+The clearing of the bits entails a change in the reorganization timestamp of the registry as well. By default the kernel uses a value of 7 days to check for this and the registry itself isn't locked/used (this value can be controlled via the registry see [appendix](#appendix)).
+
+We can see this from the following example using `yarp`.
 
 ```
 Hive information:
