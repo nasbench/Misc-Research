@@ -377,7 +377,10 @@ The following is a list of DLLs and binaries that import quirk related functions
 
 </details>
 
-- The following is a list of built-in QUIRKS as of 22621.3007
+- The following is a list of built-in QUIRKS as of Windows version 22621.3007
+
+<details>
+    <summary>Expand Details</summary>
 
 ```yaml
 QUIRK: COMPAT.OlderThanWin7
@@ -5131,3 +5134,5 @@ QUIRK: COMPONENT32.Quirk4
    QUIRK_CODE_ID: 3
    TELEMETRY_OFF: True
 ```
+
+</details>
