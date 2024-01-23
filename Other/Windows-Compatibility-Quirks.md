@@ -52,19 +52,19 @@ The example above define a compatibility quirk named `XAML.ForcePostParseNameReg
 
 - The `QUIRK_ENABLED_UPTO_VERSION_OR_QUIRK_ENABLED_VERSION_LT` field indicate the status of the QUIRK (enabled, disabled or enabled for specific versions). A value of "0" in this case indicate that this QUIRK is disabled.
 - The `EDITION` field indicates on what edition of "OS" is this applied. Currently i've been able to document 18 possible values. These values can be combined with each other. In this case the value `262143` is a combination of the following editions
-    - 'UAP'
-    - 'DESKTOP'
-    - 'MOBILE'
-    - 'XBOX'
-    - 'TEAM'
-    - 'IOT'
-    - 'IOTHEADLESS'
-    - 'SERVER'
-    - 'HOLOGRAPHIC'
-    - 'XBOXSRA'
-    - 'XBOXERA'
-    - '7067329'
-    - 'WINDOWSCOREHEADLESS'
+    - `UAP`
+    - `DESKTOP`
+    - `MOBILE`
+    - `XBOX`
+    - `TEAM`
+    - `IOT`
+    - `IOTHEADLESS`
+    - `SERVER`
+    - `HOLOGRAPHIC`
+    - `XBOXSRA`
+    - `XBOXERA`
+    - `7067329`
+    - `WINDOWSCOREHEADLESS`
 - `QUIRK_COMPONENT_CODE_ID` and `QUIRK_CODE_ID` are both and unique identifier for the QUIRK and the QUIRK_COMPONENT and they are used to select a QUIRK via the `QuirkIsEnabled`
 - `TELEMETRY` - Currently I don't know the true "purpose" of this value apart from the obvious inference that its related to sending telemetry.
 
