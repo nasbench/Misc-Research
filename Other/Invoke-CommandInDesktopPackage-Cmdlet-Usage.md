@@ -1,4 +1,4 @@
-# Invoke-CommandInDesktopPackage
+# Invoke-CommandInDesktopPackage Interesting Tidbit 
 
 You can execute commands in the context of an AppX Package to gain access to it's virtualized resources (example virtualized registry keys or files)
 
