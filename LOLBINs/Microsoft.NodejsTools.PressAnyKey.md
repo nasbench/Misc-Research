@@ -2,7 +2,7 @@
 
 This binary can be used as a LOLBIN as described [here](https://lolbas-project.github.io/lolbas/OtherMSBinaries/Microsoft.NodejsTools.PressAnyKey/).
 
-### Addtional Info
+### Additional Info
 
 - The arguments number must be at least 3
 - The first first argument can be anything (instead of `both`, `normal` or `abnormal`). Since the `switch` clause doesn't specify a default case. And the `flag` variable is set to `true` before the check.

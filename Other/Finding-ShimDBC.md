@@ -41,7 +41,7 @@ TL;DR is this utility allows us to test an application for potential compatibili
 
 ![image](https://github.com/nasbench/Misc-Research/assets/8741929/eaf0d984-2423-401b-bcf2-93e5aa09a8b0)
 
-Once we execute our binary and issues have been found, we can choose to either "apply" the suggested mitigations or "export" it as an .MSI file.
+Once we execute our binary and issues have been found, we can choose to either "apply" the suggested mitigation or "export" it as an .MSI file.
 
 ![image](https://github.com/nasbench/Misc-Research/assets/8741929/0ab54960-bdc7-40ed-8574-1c1f7ba2c24a)
 
