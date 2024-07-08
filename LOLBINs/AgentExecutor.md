@@ -7,10 +7,12 @@ This binary can be used as a LOLBIN as described [here](https://lolbas-project.g
 This writeup looks at version [AgentExecutor - 1.80.133.0](https://www.virustotal.com/gui/file/8ded7e544f8a7f5ccda90e971d7a8a25dd4e390e2d08731676a3875d57c3ef46/details) and [Microsoft.Management.Clients.IntuneManagementExtension.WinGetLibrary.dll - 1.79.160.0](https://www.virustotal.com/gui/file/ff554678192fbe990945e283ab185895544d3c3a9b2dd0592ecad032b59121bf/details)
 
 Path:
-    - `C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe`
+
+- `C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe`
 
 Additional Info:
-    - https://twitter.com/nas_bench/status/1618198975072604161
+
+- https://twitter.com/nas_bench/status/1618198975072604161
 
 ## Main
 
