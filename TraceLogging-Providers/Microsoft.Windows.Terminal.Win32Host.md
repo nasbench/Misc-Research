@@ -7,8 +7,9 @@ ProviderName: Microsoft.Windows.Terminal.Win32Host
 ProviderGroupGUID: 4f50731a-89cf-4782-b3e0-dce8c90476ba
 
 Definition:
-    - [WindowEmperor.cpp](https://github.com/microsoft/terminal/blob/92f9ff948b7531d9446ba3c72f805576589a0217/src/cascadia/WindowsTerminal/WindowEmperor.cpp)
-    - [IslandWindow.cpp](https://github.com/microsoft/terminal/blob/92f9ff948b7531d9446ba3c72f805576589a0217/src/cascadia/WindowsTerminal/IslandWindow.cpp)
+
+- [WindowEmperor.cpp](https://github.com/microsoft/terminal/blob/92f9ff948b7531d9446ba3c72f805576589a0217/src/cascadia/WindowsTerminal/WindowEmperor.cpp)
+- [IslandWindow.cpp](https://github.com/microsoft/terminal/blob/92f9ff948b7531d9446ba3c72f805576589a0217/src/cascadia/WindowsTerminal/IslandWindow.cpp)
 
 ### Events
 
