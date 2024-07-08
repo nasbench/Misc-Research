@@ -7,10 +7,11 @@ ProviderName: Microsoft.Windows.Terminal.App
 ProviderGroupGUID: TBD
 
 Definition:
-    - https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/AppLogic.cpp
-    - https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/SuggestionsControl.cpp
-    - https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/CommandPalette.cpp
-    - https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/TerminalWindow.cpp
+
+- [AppLogic.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/AppLogic.cpp)
+- [SuggestionsControl.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/SuggestionsControl.cpp)
+- [CommandPalette.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/CommandPalette.cpp)
+- [TerminalWindow.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/TerminalWindow.cpp)
 
 ### Events
 
