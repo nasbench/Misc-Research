@@ -1,4 +1,4 @@
-# Odbcconf.exe LOLBIN
+# Odbcconf.exe
 
 This binary can be used as a LOLBIN as described [here](https://lolbas-project.github.io/lolbas/Binaries/Odbcconf/)
 

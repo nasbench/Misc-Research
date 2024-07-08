@@ -1,8 +1,8 @@
-# DumpMinitool.exe LOLBIN
+# DumpMinitool.exe
 
 This binary can be used as a LOLBIN as described [here](https://lolbas-project.github.io/lolbas/OtherMSBinaries/DumpMinitool/)
 
-### Addtional Info
+### Additional Info
 
 - The arguments flags are meaningless only the order is important. This means as long as you provide exactly 6 flags and their value the binary will still work. Here are the exact positions for reference:
 

@@ -1,4 +1,4 @@
-# Microsoft.NodejsTools.PressAnyKey.exe LOLBIN
+# Microsoft.NodejsTools.PressAnyKey.exe
 
 This binary can be used as a LOLBIN as described [here](https://lolbas-project.github.io/lolbas/OtherMSBinaries/Microsoft.NodejsTools.PressAnyKey/).
 
