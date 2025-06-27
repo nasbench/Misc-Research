@@ -1,7 +1,7 @@
 # Microsoft.Windows.Terminal.App
 
-Created: 21/01/2024
-Last Updated: 27/06/2025
+- Created: 21/01/2024
+- Last Updated: 27/06/2025
 
 ## Summary
 
