@@ -1,17 +1,20 @@
 # Microsoft.Windows.Terminal.Win32Host
 
-Created: 21/01/2024
+- Created: 21/01/2024
+- Last Updated: 27/06/2025
 
-ProviderGUID: 56c06166-2e2e-5f4d-7ff3-74f4b78c87d6
-ProviderName: Microsoft.Windows.Terminal.Win32Host
-ProviderGroupGUID: 4f50731a-89cf-4782-b3e0-dce8c90476ba
+## Summary
+
+- **ProviderGUID**: `56c06166-2e2e-5f4d-7ff3-74f4b78c87d6`
+- **ProviderName**: `Microsoft.Windows.Terminal.Win32Host`
+- **ProviderGroupGUID**: `4f50731a-89cf-4782-b3e0-dce8c90476ba`
 
 Definition:
 
 - [WindowEmperor.cpp](https://github.com/microsoft/terminal/blob/92f9ff948b7531d9446ba3c72f805576589a0217/src/cascadia/WindowsTerminal/WindowEmperor.cpp)
 - [IslandWindow.cpp](https://github.com/microsoft/terminal/blob/92f9ff948b7531d9446ba3c72f805576589a0217/src/cascadia/WindowsTerminal/IslandWindow.cpp)
 
-### Events
+## Events
 
 #### EndSession
 
