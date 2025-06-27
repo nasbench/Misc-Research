@@ -1,19 +1,24 @@
 # Microsoft.Windows.Terminal.App
 
 Created: 21/01/2024
+Last Updated: 27/06/2025
 
-ProviderGUID: 24a1622f-7da7-5c77-3303-d850bd1ab2ed
-ProviderName: Microsoft.Windows.Terminal.App
-ProviderGroupGUID: TBD
+## Summary
 
-Definition:
+- **ProviderGUID**: `24a1622f-7da7-5c77-3303-d850bd1ab2ed`
 
-- [AppLogic.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/AppLogic.cpp)
-- [SuggestionsControl.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/SuggestionsControl.cpp)
-- [CommandPalette.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/CommandPalette.cpp)
-- [TerminalWindow.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/TerminalWindow.cpp)
+- **ProviderName**: `Microsoft.Windows.Terminal.App`
 
-### Events
+- **ProviderGroupGUID**: `TBD`
+
+- **Definition**:
+
+  - [AppLogic.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/AppLogic.cpp)
+  - [SuggestionsControl.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/SuggestionsControl.cpp)
+  - [CommandPalette.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/CommandPalette.cpp)
+  - [TerminalWindow.cpp](https://github.com/microsoft/terminal/blob/0d47c862c2d8e4733ed8bcc6d57a90105d4d1712/src/cascadia/TerminalApp/TerminalWindow.cpp)
+
+## Events
 
 #### AppCreated
 
