@@ -155,7 +155,8 @@ If you have access to environment variables, you can also look for the following
 
 ## Other Notes
 
-- I've seen cases where the `next` script is called via the CommandLine `<app>\node_modules\.bin\\..\next\dist\bin\next`.
+- I've seen cases where the `next` script is called with the CommandLine: `<app>\node_modules\.bin\\..\next\dist\bin\next`.
+- When looking for suspicious command-lines from child-processes, avoid to match on the default shells `cmd` or `sh` (`bash` / `dash`) alone as those are as the name suggests "default" and will be used by node itself. Instead try to look for variants that are different. For example `cmd.exe` with `/d /s /c` or `cmd /d /s /c` with a suspicious looking string or command.
 
 ## False Positive Scenarios
 
