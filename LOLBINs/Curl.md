@@ -82,6 +82,7 @@ From a logging perspective, here is an example of how it will look like in proce
 ```
 
 > Note: Usage in the wild has been observed ;)
+> This write-up does not describe all the possible ways this can be abused. This is left to the reader as an exercise ;)
 
 Below is a vibe coded python script that can be used to percent encode a given URL:
 
